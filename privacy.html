@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      layout:decorator="blog/layout" th:with="title='Privacy |',active='category'">
+<header th:replace="blog/layout::headerFragment(${title},${active})"></header>
+<body>
+<div layout:fragment="content">
+  <div class="content-wrap">
+    <div id="content" class="content">
+      <div id="posts" class="posts-expand">
+        <h1>Privacy Policy</h1>
+        <p>Welcome to our website. We value your privacy and are committed to protecting your personal information. This privacy policy explains how we collect, use, and protect your personal information.</p>
+        <h2>Information Collection</h2>
+        <p>We may collect your personal information, including but not limited to your name, email address, phone number, and address. We only collect information that you voluntarily provide. You may choose not to provide certain information, but this may affect your ability to use certain features of our website.</p>
+        <h2>Information Use</h2>
+        <p>We may use your personal information to contact you, such as to respond to your inquiries or provide the services you request. We may also use your information for internal record keeping and analysis to improve our products and services. We will not sell or transfer your personal information to third parties.</p>
+        <h2>Information Protection</h2>
+        <p>We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. We use secure protocols and technologies to protect your information and only authorize employees who need access to this information.</p>
+        <h2>Cookie</h2>
+        <p>We may use cookie technology to collect information about you to improve your user experience. A cookie is a small file stored on your computer that can help us identify your browser and the pages you visit. You can choose to accept or decline cookies, but if you decline cookies, it may affect your ability to use certain features of our website.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
